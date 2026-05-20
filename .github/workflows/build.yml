@@ -1,19 +1,13 @@
----
-include:
-  - board: xiao_ble
-    shield: cornix_dongle_adapter prospector_adapter
-    artifact-name: prospector_dongle
+name: Build ZMK firmware
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "boards/*"
+      - "config/*"
+    tags-ignore:
+      - "*"
 
-  - board: cornix_ph_left
-    artifact-name: cornix_left_for_dongle
-
-  - board: cornix_right
-    artifact-name: cornix_right
-
-  - board: xiao_ble
-    shield: settings_reset
-    artifact-name: reset_prospector
-
-  - board: cornix_right
-    shield: settings_reset
-    artifact-name: reset_cornix
+jobs:
+  build:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
