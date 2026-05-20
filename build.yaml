@@ -50,20 +50,24 @@
 
 ---
 include:
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: cornix_dongle_adapter prospector_adapter
     artifact-name: prospector_dongle
 
+  - board: cornix_left
+    artifact-name: cornix_left_default_nosd
+
   - board: cornix_ph_left
-    artifact-name: cornix_left_for_dongle
+    artifact-name: cornix_left_for_dongle_nosd
 
   - board: cornix_right
-    artifact-name: cornix_right
+    artifact-name: cornix_right_nosd
 
-  - board: xiao_ble
+  - board: cornix_right
+    shield: settings_reset
+    snippet: studio-rpc-usb-uart nrf52840-nosd
+    artifact-name: cornix_reset
+
+  - board: xiao_ble//zmk
     shield: settings_reset
     artifact-name: reset_prospector
-
-  - board: cornix_right
-    shield: settings_reset
-    artifact-name: reset_cornix
