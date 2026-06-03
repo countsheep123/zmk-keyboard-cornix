@@ -150,10 +150,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&none  &mt LEFT_ALT Q  &kp W  &kp E         &kp R        &kp T                                       &kp Y                 &kp U        &kp I          &kp O    &kp P          &none
+&none  &hm LEFT_ALT Q  &kp W  &kp E         &kp R        &kp T                                       &kp Y                 &kp U        &kp I          &kp O    &kp P          &none
 &none  &kp A           &kp S  &kp D         &kp F        &kp G                                       &kp H                 &kp J        &kp K          &kp L    &kp SEMICOLON  &none
-&none  &mt LCTRL Z     &kp X  &kp C         &kp V        &kp B                 &kp SPACE  &kp SPACE  &kp N                 &kp M        &kp COMMA      &kp DOT  &kp FSLH       &none
-&none  &none           &none  &kp LEFT_GUI  &lt 1 LANG2  &mt LEFT_SHIFT SPACE                        &mt LEFT_SHIFT ENTER  &lt 2 LANG1  &kp BACKSPACE  &none    &none          &none
+&none  &hm LCTRL Z     &kp X  &kp C         &kp V        &kp B                 &kp SPACE  &kp SPACE  &kp N                 &kp M        &kp COMMA      &kp DOT  &kp FSLH       &none
+&none  &none           &none  &kp LEFT_GUI  &lt 1 LANG2  &hm LEFT_SHIFT SPACE                        &hm LEFT_SHIFT ENTER  &lt 2 LANG1  &kp BACKSPACE  &none    &none          &none
             >;
 
             sensor-bindings =
